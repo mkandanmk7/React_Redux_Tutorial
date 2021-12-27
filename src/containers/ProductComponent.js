@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Btn from "../Components/Button";
 
 const ProductComponent = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -18,6 +19,7 @@ const ProductComponent = () => {
                 <div className="header">{title}</div>
                 <div className="meta price">$ {price}</div>
                 <div className="meta">{category}</div>
+                <Btn text="Add to Cart" color="error" outline="outlined" />
               </div>
             </div>
           </div>
