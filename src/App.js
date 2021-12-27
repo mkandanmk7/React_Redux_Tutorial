@@ -5,6 +5,7 @@ import Header from "./containers/Header";
 import "./App.css";
 import ProductDetails from "./containers/ProductDetails";
 import CounterRequest from "./Components/CounterRequest";
+import CustomReq from "./Components/CustomReq";
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
         </Switch>
       </Router> */}
       <h2>Time out</h2>
-      <CounterRequest />
+      {/* old timer */}
+      {/* <CounterRequest /> */}
+
+      {/* custom timer */}
+      <CustomReq />
     </div>
   );
 }
