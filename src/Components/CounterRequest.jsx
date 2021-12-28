@@ -25,6 +25,7 @@ const CounterRequest = () => {
   useEffect(() => {
     const StopReq = setInterval(getData, 2000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // unmount
     return () => clearInterval(StopReq);
   }, []);
 
